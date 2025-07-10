@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftSoul - Coming Soon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a slightly more unique feel, if desired */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Basic animation for the banner */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .animate-fadeInScale {
+            animation: fadeInScale 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-pink-50 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl max-w-2xl w-full text-center animate-fadeInScale">
+
+        <!-- Header Section -->
+        <header class="mb-8">
+            <h1 class="text-5xl md:text-6xl font-bold text-purple-700 mb-4 tracking-tight">
+                GiftSoul
+            </h1>
+            <p class="text-2xl md:text-3xl text-gray-800 font-semibold">
+                Coming Soon!
+            </p>
+        </header>
+
+        <!-- Mission/About Section -->
+        <section class="mb-8 text-gray-700 leading-relaxed">
+            <p class="mb-4 text-lg md:text-xl">
+                Get ready to discover the perfect customized gifts!
+            </p>
+            <p class="mb-4 text-base md:text-lg">
+                At <strong>GiftSoul</strong>, we're building a unique e-commerce platform dedicated to connecting small, talented vendors directly with customers like you. Our mission is to:
+            </p>
+            <ul class="list-disc list-inside text-left mx-auto max-w-sm md:max-w-md text-base md:text-lg space-y-2">
+                <li><strong>Narrow down trust issues:</strong> We aim to create a transparent and reliable space for both buyers and sellers.</li>
+                <li><strong>Empower small vendors:</strong> Provide a robust platform for them to sell their customized creations and grow their businesses.</li>
+                <li><strong>Simplify growth:</strong> Help vendors thrive without the burden of extensive tech development or marketing expenses.</li>
+            </ul>
+            <p class="mt-4 text-base md:text-lg">
+                We believe in the power of unique, handcrafted gifts and the incredible talent of independent creators.
+            </p>
+            <!-- New Motto for Customers -->
+            <p class="mt-6 text-lg md:text-xl font-bold text-purple-700">
+                Gift not just to their hand, but to their soul.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <footer class="mt-8">
+            <p class="text-lg md:text-xl text-gray-800 mb-2">
+                Have questions or want to learn more?
+            </p>
+            <a href="mailto:contact@giftsoul.in" class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
+                Contact Us: contact@giftsoul.in
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
